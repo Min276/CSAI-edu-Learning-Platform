@@ -185,7 +185,7 @@ a:hover {
 }
 
 a.turquoise {
-	color: #00bfd8!important;
+	color: #03a9f4!important;
 }
 
 a.white {
@@ -342,7 +342,7 @@ a.white {
 	padding-top: 1.0625rem;
 	padding-bottom: 0.0625rem;
 	padding-left: 1.3125rem;
-	border: 1px solid #c4d8dc;
+	border: 1px solid #03a9f4;
 	border-radius: 0.25rem;
 	background-color: #fff;
 	color: #626262;
@@ -396,7 +396,7 @@ select::-ms-expand {
 	height: 8rem; /* used instead of html rows to normalize height between Chrome and IE/FF */
 	padding-top: 1.25rem;
 	padding-left: 1.3125rem;
-	border: 1px solid #c4d8dc;
+	border: 1px solid #03a9f4;
 	border-radius: 0.25rem;
 	background-color: #fff;
 	color: #626262;
@@ -407,14 +407,14 @@ select::-ms-expand {
 .form-control-input:focus,
 .form-control-select:focus,
 .form-control-textarea:focus {
-	border: 1px solid #a1a1a1;
+	border: 1px solid #000;
 	outline: none; /* Removes blue border on focus */
 }
 
 .form-control-input:hover,
 .form-control-select:hover,
 .form-control-textarea:hover {
-	border: 1px solid #a1a1a1;
+	border: 1px solid #000;
 }
 
 .checkbox {
@@ -439,7 +439,7 @@ input[type='checkbox'] {
 	height: 3.125rem;
 	border: 1px solid #00bfd8;
 	border-radius: 1.5rem;
-	background-color: #00bfd8;
+	background-color: #03a9f4;
 	color: #fff;
 	font: 700 0.75rem/1.75rem "Raleway", sans-serif;
 	cursor: pointer;
@@ -447,8 +447,8 @@ input[type='checkbox'] {
 }
 
 .form-control-submit-button:hover {
-	background-color: transparent;
-	color: #00bfd8;
+	background-color: #000;
+	color: #fff;
 }
 
 /* Form Success And Error Message Formatting */
@@ -665,7 +665,7 @@ input[type='checkbox'] {
 	width: 1rem;
 	height: 1rem;
 	border-radius: 100%;
-	background-color: #00bfd8;
+	/*background-color: #03a9f4;*/
 	-webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
 	animation: sk-bouncedelay 1.4s infinite ease-in-out both;
 }
@@ -673,13 +673,18 @@ input[type='checkbox'] {
 .spinner .bounce1 {
 	-webkit-animation-delay: -0.32s;
 	animation-delay: -0.32s;
+	background-color: #03a9f4;
 }
 
 .spinner .bounce2 {
 	-webkit-animation-delay: -0.16s;
 	animation-delay: -0.16s;
+	background-color: #3a3737;
 }
 
+.spinner .bounce3{
+	background-color: #ffe500;
+}
 @-webkit-keyframes sk-bouncedelay {
 	0%, 80%, 100% { -webkit-transform: scale(0); }
 	40% { -webkit-transform: scale(1.0); }
@@ -1466,7 +1471,7 @@ input[type='checkbox'] {
 }
 
 .basic-4 .fa-stack-2x {
-	color: #00bfd8;
+	color: #03a9f4;
 	transition: all 0.2s ease;
 }
 
@@ -1512,7 +1517,6 @@ input[type='checkbox'] {
 .form-2 .list-unstyled .fab {
 	margin-right: 0.5rem;
 	font-size: 0.875rem;
-	color: #00bfd8;
 }
 
 .form-2 .list-unstyled .fa-phone {
@@ -1555,7 +1559,7 @@ input[type='checkbox'] {
 }
 
 .footer .list-unstyled .fas {
-	color: #00bfd8;
+	color: #03a9f4;
 	font-size: 0.5rem;
 	line-height: 1.375rem;
 }
@@ -1576,7 +1580,7 @@ input[type='checkbox'] {
 }
 
 .footer .fa-stack .fa-stack-2x {
-	color: #00bfd8;
+	color: #03a9f4;
 	transition: all 0.2s ease;
 }
 
@@ -1617,13 +1621,13 @@ a.back-to-top {
 	width: 2.625rem;
 	height: 2.625rem;
 	border-radius: 1.875rem;
-	background: #00bfd8 url("../images/up-arrow.png") no-repeat center 47%;
+	background: #2196f3 url("../images/up-arrow.png") no-repeat center 47%;
 	background-size: 1.125rem 1.125rem;
 	text-indent: -9999px;
 }
 
 a:hover.back-to-top {
-	background-color: #00a7bd; 
+	background-color: #000; 
 }
 
 
@@ -1895,7 +1899,7 @@ a:hover.back-to-top {
 	}
 	
 	.navbar-custom .fa-stack-2x {
-		color: #00bfd8;
+		color: #000;
 		transition: all 0.2s ease;
 	}
 	
@@ -1913,7 +1917,7 @@ a:hover.back-to-top {
 	}
 
 	.navbar-custom.top-nav-collapse .fa-stack-2x {
-		color: #00bfd8;
+		color: #03a9f4;
 	}
 	
 	.navbar-custom.top-nav-collapse .fa-stack-1x {
