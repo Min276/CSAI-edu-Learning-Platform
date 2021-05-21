@@ -10,12 +10,12 @@
 	
 	/* Preloader */
 	$(window).on('load', function() {
-		var preloaderFadeOutTime = 500;
+		var preloaderFadeOutTime = 3;
 		function hidePreloader() {
 			var preloader = $('.spinner-wrapper');
 			setTimeout(function() {
 				preloader.fadeOut(preloaderFadeOutTime);
-			}, 500);
+			}, 3);
 		}
 		hidePreloader();
 	});
@@ -82,7 +82,6 @@
 
         }
     });
-
 
     /* Card Slider - Swiper */
 	var cardSlider = new Swiper('.card-slider', {

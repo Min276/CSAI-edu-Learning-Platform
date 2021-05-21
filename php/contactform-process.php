@@ -56,4 +56,5 @@ if ($success && $errorMSG == ""){
         echo $errorMSG;
     }
 }
+require index.html;
 ?>

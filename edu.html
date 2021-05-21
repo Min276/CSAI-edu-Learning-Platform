@@ -20,7 +20,7 @@
 
 
     <!-- Website Title -->
-    <title>CSAI edu - Deep Dive into CS</title>
+    <title>CSAI edu | CS Education</title>
     
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,600,700,700i&amp;subset=latin-ext" rel="stylesheet">
@@ -66,34 +66,50 @@
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="index.html">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="index.html#pforkids">Programming for Kids</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="index.html#pforeveryone">Programming for Everyone</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#softwaredev">Computer Science</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="index.html#ai">Artificial Intelligence</a>
-                </li>
+                
 
                 <!-- Dropdown Menu -->          
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle page-scroll" href="#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">About</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#"><span class="item-text">Terms Conditions</span></a>
+                <li class="nav-item dropdown" id="main-dropdown-nav">
+                    <a class="nav-link dropdown-toggle page-scroll"  id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Courses</a>
+                        
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="dropdown">
+                          <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle page-scroll"  id="navbarDropdown1" role="button" aria-haspopup="true" aria-expanded="false" style="font-size: 15px">Main Courses</a>
+                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown1" id="dropdown1">
+                        <li><a class="dropdown-item" href="index.html#pforkids"><span class="item-text">Programming for Kids</span></a></li>
                         <div class="dropdown-items-divide-hr"></div>
-                        <a class="dropdown-item" href="#"><span class="item-text">Privacy Policy</span></a>
-                    </div>
+                        <li><a class="dropdown-item" href="index.html#pforeveryone"><span class="item-text">Programming for Everyone</span></a></li>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <li><a class="dropdown-item" href="index.html#cs">
+                            <span class="item-text">Computer Science</span></a></li>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <li><a class="dropdown-item" href="index.html#ai"><span class="item-text">Artificial Intelligence</span></a></li>
+                    </ul>
+                      </li>
+                         <li class="nav-item dropdown">
+                             <div class="dropdown-items-divide-hr"></div>
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown2" role="button" aria-haspopup="true" aria-expanded="false" style="font-size: 15px">Special Courses</a>
+                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown2" id="dropdown2">
+                                <li><a class="dropdown-item" href="index.html#featuredcourses"><span class="item-text">Featured Courses</span></a></li>
+                                <div class="dropdown-items-divide-hr"></div>
+                                <li><a class="dropdown-item" href="index.html#shortcourses"><span class="item-text">Short Courses</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </li>
                 <!-- end of dropdown menu -->
-
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#contact">Contact</a>
+                    <a class="nav-link page-scroll" href="#header">Deep Dive into CS <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#contact">Contact Us</a>
                 </li>
             </ul>
+            
             <span class="nav-item social-icons">
                 <span class="fa-stack">
                     <a href="https://www.facebook.com/csaiorg.edu">
@@ -116,7 +132,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 data-aos="zoom-in" data-aos-delay="300">Deep Dive into CS</h1>
+                    <h1 id="headerbox" data-aos="zoom-in" data-aos-delay="300">Deep Dive into CS</h1>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -130,15 +146,20 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumbs">
-                        <a href="index.html">Home</a><i class="fa fa-angle-double-right"></i><span>CS Education</span>
+                        <a href="index.html">Home</a><i class="fa fa-angle-double-right"></i><span><a href="edu.html">CS Education</a></span>
                     </div> <!-- end of breadcrumbs -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of ex-basic-1 -->
     <!-- end of breadcrumbs -->
+   <div class="prompt">
+  <p>Do you want to add this site to your home screen?</p>
+  <button type="button" class="prompt__install">Yes Please</button>
+  <button type="button" class="prompt__close">No Thanks</button>
+</div>
 <br>
-<div id="softwaredev">
+<div id="softwaredev" style="padding-bottom: 40px;">
  <div class="container">
   <div class="row">
     <div class="col-lg-12">
@@ -152,11 +173,13 @@
      <center style="box-shadow: #e3e3e3 1px 1px 0px;">
      <img style="width: 200px; height: 200px; padding: 20px;" src="images/code.org.jpg">
      </center>
-     <h4 style="padding: 10px 22px 0px;">Creating Apps with App Lab</h4>
+     
+     <h4 id="softwarebar">Creating Apps with App Lab</h4>
      <p style="margin-left: 22px; margin-right: 22px; font-family: sans-serif;">Code.org 
         &nbsp;&nbsp; <i class="fas fa-layer-group"></i> Beginner<br>
      <i class="fa fa-list"></i> Lessons: 15 &nbsp;<i class="fa fa-clock"></i> Hours: 20</p>
      </a>
+
      </div>
     </div>
     <div class="col-lg-3">
@@ -165,7 +188,7 @@
      <center style="box-shadow: #e3e3e3 1px 1px 0px;">
      <img style="width: 230px; height: 200px; padding: 20px" src="images/pen.png">
      </center>
-     <h4 style="padding: 10px 22px 0px;">Intro to Software Development</h4>
+     <h4 id="softwarebar">Intro to Software Development</h4>
      <p style="margin-left: 22px; margin-right: 22px; font-family: sans-serif;">PennX 
         &nbsp;&nbsp; <i class="fas fa-layer-group"></i> Intermediate<br>
      <i class="fa fa-list"></i> Modules: 4 &nbsp;<i class="fa fa-clock"></i> Hours: 30</p>
@@ -178,7 +201,7 @@
      <center style="box-shadow: #e3e3e3 1px 1px 0px;">
      <img style="width: 200px; height: 200px; padding: 25px" src="images/edx.svg">
      </center>
-     <h4 style="padding: 10px 22px 0px;">Intro to Software Engineering</h4>
+     <h4 id="softwarebar">Intro to Software Engineering</h4>
      <p style="margin-left: 22px; margin-right: 22px; font-family: sans-serif;">UBCx &nbsp;&nbsp; <i class="fas fa-layer-group"></i> Advanced<br>
 
      <i class="fa fa-list"></i> Modules: 8 &nbsp;<i class="fa fa-clock"></i> Hours: 60</p>
@@ -191,7 +214,7 @@
      <center style="box-shadow: #e3e3e3 1px 1px 0px;">
      <img style="width: 230px; height: 200px; padding: 30px" src="images/w3c.png">
      </center>
-     <h4 style="padding: 10px 22px 0px;">Building Apps & Games with HTML</h4>
+     <h4 id="softwarebar">Building Apps & Games with HTML</h4>
      <p style="margin-left: 22px; margin-right: 22px; font-family: sans-serif;">W3Cx
         &nbsp;&nbsp; <i class="fas fa-layer-group"></i> Advanced<br>
      <i class="fa fa-list"></i> Modules: 4 &nbsp;<i class="fa fa-clock"></i> Hours: 30</p>
@@ -204,18 +227,19 @@
 </div>
 </div>
 <br>
-<br>
-<br>
+
+
 <div id="webdev">
  <div class="container">
   <div class="row">
     <div class="col-lg-12">
-    <h3 style="text-align: center; padding: 0px 20px 20px 20px;color:#607d8b;" data-aos="zoom-in" data-aos-delay="300">Web Development</h3>
+    <h3 style="text-align: center; padding: 0px 20px 20px 20px;color: #e8ff04;
+    text-shadow: 1px 1px 0px #70818e;" data-aos="zoom-in" data-aos-delay="300">Web Development</h3>
     </div>
   </div>
   <div class="row">
     <div class="col-lg-3">
-     <div class="card" data-aos="zoom-in" data-aos-delay="300">
+     <div class="card" id="webcard" data-aos="zoom-in" data-aos-delay="300">
      <a href="https://code.org/educate/weblab">
      <center style="box-shadow: #e3e3e3 1px 1px 0px;">
      <img style="width: 200px; height: 200px; padding: 20px;" src="images/code.org.jpg">
@@ -230,7 +254,7 @@
      </div>
     </div>
     <div class="col-lg-3">
-     <div class="card" data-aos="zoom-in" data-aos-delay="300">
+     <div class="card" id="webcard" data-aos="zoom-in" data-aos-delay="300">
      <a href="https://www.khanacademy.org/computing/computer-programming/html-css">
      <center style="box-shadow: #e3e3e3 1px 1px 0px;">
      <img style="width: 200px; height: 200px; padding: 10px;" src="images/khanacademy.png">
@@ -245,7 +269,7 @@
      </div>
     </div>
     <div class="col-lg-3">
-     <div class="card" data-aos="zoom-in" data-aos-delay="300">
+     <div class="card" id="webcard" data-aos="zoom-in" data-aos-delay="300">
      <a href="https://www.freecodecamp.org/learn/responsive-web-design">
      <center style="box-shadow: #e3e3e3 1px 1px 0px;">
      <img style="width: 200px; height: 200px; padding: 30px;" src="images/freecodecamp.jfif">
@@ -260,7 +284,7 @@
      </div>
     </div>
     <div class="col-lg-3">
-     <div class="card" data-aos="zoom-in" data-aos-delay="300">
+     <div class="card" id="webcard" data-aos="zoom-in" data-aos-delay="300">
      <a href="https://www.khanacademy.org/computing/computer-programming/html-css-js">
      <center style="box-shadow: #e3e3e3 1px 1px 0px;">
      <img style="width: 200px; height: 200px; padding: 10px;" src="images/khanacademy.png">
@@ -281,8 +305,6 @@
 </div>
 
 <br>
-<br>
-<br>
 
 
 
@@ -295,12 +317,12 @@
   </div>
   <div class="row">
     <div class="col-lg-3">
-     <div class="card" data-aos="fade-up" data-aos-delay="300">
+     <div class="card" style="border: 0px;" data-aos="fade-up" data-aos-delay="300">
      <a href="https://code.org/educate/gamelab">
      <center>
      <img style="width: 200px; height: 200px; padding: 20px;" src="images/code.org.jpg">
      </center>
-      <h4 style="padding: 10px 22px 0px;">Game Lab</h4>
+      <h4 id="gamehead">Game Lab for Kids & Beginners</h4>
      <p style="margin-left: 22px; margin-right: 22px; font-family: sans-serif;">Code.org
         &nbsp;&nbsp; <i class="fas fa-layer-group"></i> Beginner<br>
      <i class="fa fa-list"></i> Modules: 2 &nbsp;<i class="fa fa-clock"></i> Hours: 25</p>
@@ -308,12 +330,12 @@
      </div>
     </div>
     <div class="col-lg-3">
-     <div class="card" data-aos="fade-up" data-aos-delay="300">
+     <div class="card" style="border: 0px;" data-aos="fade-up" data-aos-delay="300">
      <a href="https://code.org/minecraft">
      <center>
      <img style="width: 200px; height: 200px; padding: 20px;" src="images/code.org.jpg">
      </center>
-      <h4 style="padding: 10px 22px 0px;">Minecraft</h4>
+      <h4 id="gamehead">Minecraft for Kids & Beginners</h4>
      <p style="margin-left: 22px; margin-right: 22px; font-family: sans-serif;">Code.org
         &nbsp;&nbsp; <i class="fas fa-layer-group"></i> Beginner<br>
      <i class="fa fa-list"></i> Lessons: 12 &nbsp;<i class="fa fa-clock"></i> Hours: 20</p>
@@ -321,13 +343,13 @@
      </div>
     </div>
     <div class="col-lg-3">
-     <div class="card" data-aos="fade-up" data-aos-delay="300">
+     <div class="card" style="border: 0px;" data-aos="fade-up" data-aos-delay="300">
      <a href="https://www.edx.org/course/cs50s-introduction-to-game-development">
      <center>
      <img style="width: 200px; height: 200px; padding: 20px" src="images/harvard.jpg">
      </center>
      <!-- <div style=" box-shadow: #dcd8d8 0px 1px 3px 0px;"> -->
-     <h4 style="padding: 10px 22px 0px;">Intro to Game Development</h4>
+     <h4 id="gamehead">Intro to Game Development</h4>
      <p style="margin-left: 22px; margin-right: 22px; font-family: sans-serif;">HarvardX
         &nbsp;&nbsp; <i class="fas fa-layer-group"></i> Intermediate<br>
      <i class="fa fa-list"></i> Modules: 12 &nbsp;<i class="fa fa-clock"></i> Hours: 90</p>
@@ -335,13 +357,13 @@
      </div>
     </div>
     <div class="col-lg-3">
-     <div class="card" data-aos="fade-up" data-aos-delay="300">
+     <div class="card" style="border: 0px;" data-aos="fade-up" data-aos-delay="300">
      <a href="https://www.edx.org/course/design-and-development-of-games-for-learning">
      <center>
      <img style="width: 200px; height: 200px;" src="images/mit.png">
      </center>
      <!-- <div style=" box-shadow: #dcd8d8 0px 1px 3px 0px;"> -->
-     <h4 style="padding: 10px 22px 0px;"> Game Design & Development</h4>
+     <h4 id="gamehead"> Game Design & Development</h4>
      <p style="margin-left: 22px; margin-right: 22px; font-family: sans-serif;">MITx
                 &nbsp;&nbsp; <i class="fas fa-layer-group"></i> Intermediate<br>
      <i class="fa fa-list"></i> Modules: 6 &nbsp;<i class="fa fa-clock"></i> Hours: 90</p>
@@ -353,158 +375,119 @@
 </div>
 </div>
 </div>
-<br>
 
-
-    <!-- About -->
-    <div id="about" class="basic-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3 data-aos="zoom-in" data-aos-delay="300">About The Team</h3>
-                    <p class="p-heading p-large" data-aos="fade-up" data-aos-delay="300">We are 17 years old youths who are always willing to create nice websites which benefits the society.</p>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
+<!-- About -->
+<div id="about" class="basic-4" style="margin-top: 0px;
+margin-bottom: 0px;
+/* background: linear-gradient(
+80deg
+, #00bcd4, #e8ff00); */
+background: #b1e2f9;    padding-top: 5.5rem;
+    padding-bottom: 3rem;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h3 style="margin-bottom: 30px;" data-aos="zoom-in" data-aos-delay="300">About Our Platform</h3>
+               
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+        <div class="row">
+            <div class="col-lg-4">
+                
+               
+                <!-- Team Member -->
+                <div class="team-member">
+                    <div class="image-wrapper">
+                        <img class="dev" src="images/erickyaw.png" alt="alternative" data-aos="fade-up" data-aos-delay="300">
+                    </div> <!-- end of image wrapper -->
+                    <p class="p-large" ><strong>Min Khant Kyaw</strong></p>
+                    <p class="job-title">1<sup>st</sup> year IT Engineering Student</p>
                     
-                    <!-- Team Member -->
-                    <div class="team-member">
-                        <div class="image-wrapper">
-                            <img class="img-fluid" src="images/team-member-1.svg" alt="alternative" data-aos="zoom-in" data-aos-delay="300">
-                        </div> <!-- end of image-wrapper -->
-                        <p class="p-large" data-aos="fade-up" data-aos-delay="100"><strong>Lacy Whitelong
-                        </strong></p>
-                        <p class="job-title" data-aos="fade-up" data-aos-delay="200">UI UX Designer</p>
-                        <span class="social-icons">
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <i class="fas fa-circle fa-stack-2x facebook"></i>
-                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
-                                </a>
-                            </span>
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <i class="fas fa-circle fa-stack-2x twitter"></i>
-                                    <i class="fab fa-twitter fa-stack-1x"></i>
-                                </a>
-                            </span>
-                        </span> <!-- end of social-icons -->
-                    </div> <!-- end of team-member -->
-                    <!-- end of team member -->
+                    <span class="social-icons">
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x facebook"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <!-- <i class="fas fa-circle fa-stack-2x linkedin"></i> -->
+                                <i class="fas fa-circle fa-stack-2x linkedin"></i>
+                                <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                            </a>
+                        </span>
+                    </span> <!-- end of social-icons -->
+                </div> <!-- end of team-member -->
+                <!-- end of team member -->
+                
 
-                    <!-- Team Member -->
-                    <div class="team-member">
-                        <div class="image-wrapper">
-                            <img class="img-fluid" src="images/team-member-2.svg" alt="alternative" data-aos="zoom-in" data-aos-delay="300">
-                        </div> <!-- end of image wrapper -->
-                        <p class="p-large" data-aos="fade-up" data-aos-delay="100"><strong>Eric Kyaw</strong></p>
-                        <p class="job-title" data-aos="fade-up" data-aos-delay="200">Front-End Web Developer</p>
-                        <span class="social-icons">
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <i class="fas fa-circle fa-stack-2x facebook"></i>
-                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
-                                </a>
-                            </span>
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <i class="fas fa-circle fa-stack-2x twitter"></i>
-                                    <i class="fab fa-twitter fa-stack-1x"></i>
-                                </a>
-                            </span>
-                        </span> <!-- end of social-icons -->
-                    </div> <!-- end of team-member -->
-                    <!-- end of team member -->
+               
 
-                    <!-- Team Member -->
-                    <div class="team-member">
-                        <div class="image-wrapper">
-                            <img class="img-fluid" src="images/team-member-3.svg" alt="alternative" data-aos="zoom-in" data-aos-delay="300">
-                        </div> <!-- end of image wrapper -->
-                        <p class="p-large" data-aos="fade-up" data-aos-delay="100"><strong>Sheila Zimerman</strong></p>
-                        <p class="job-title" data-aos="fade-up" data-aos-delay="200">Back-End Web Developer</p>
-                        <span class="social-icons">
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <i class="fas fa-circle fa-stack-2x facebook"></i>
-                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
-                                </a>
-                            </span>
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <i class="fas fa-circle fa-stack-2x twitter"></i>
-                                    <i class="fab fa-twitter fa-stack-1x"></i>
-                                </a>
-                            </span>
-                        </span> <!-- end of social-icons -->
-                    </div> <!-- end of team-member -->
-                    <!-- end of team member -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-4 -->
-    <!-- end of about -->
-
-
-    <!-- Contact -->
-    <div id="contact" class="form-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3 style="text-align: center;" data-aos="zoom-in" data-aos-delay="300">Contact Information</h3>
-                    <ul class="list-unstyled li-space-lg">
-                        <li class="address" data-aos="fade-up" data-aos-delay="300">Don't hesitate to give us a call or send us a contact form message</li>
-                        <li data-aos="fade-up" data-aos-delay="300"><i class="fas fa-map-marker-alt"></i>Tamwe Township, Yangon</li>
-                        <li data-aos="fade-up" data-aos-delay="300"><i class="fas fa-phone"></i><a class="turquoise" href="tel:003024630820" style="font-family: sans-serif;">+95 720 2212</a></li>
-                        <li data-aos="fade-up" data-aos-delay="300"><i class="fas fa-envelope"></i><a class="turquoise" href="mailto:hello@csai.edu.mm" style="font-family: sans-serif;">hello@csai.edu.mm</a></li>
-                    </ul>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="map-responsive" data-aos="zoom-in" data-aos-delay="300">                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3819.310146896934!2d96.17592031767077!3d16.810963101860256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1stamwe!5e0!3m2!1sen!2smm!4v1614340445687!5m2!1sen!2smm" allowfullscreen></iframe>
+            </div> <!-- end of col -->
+            <div class="col-lg-8">
+                <p class="about" data-aos="fade-up" data-aos-delay="300"><span class="quote">"</span>This educational web platform named "CSAI edu" was developed in March, 2021, aiming for the children who weren't able to accomplish Computer Science class offered by Thate Pan Hub due to the political situations in Myanmar. I, as their teacher, wanted them to keep in touch with Computer Science, and in this way, I developed this, using Evolvo's Template (Only Frame) to save time. It took me at least 5 days to finish it as nearly eighty percent of this web platform were my works. I only added free, great & suitable courses from platforms like Google & edX. As this is my first experience of setting up an educational platform, I could only recommend free courses & add here, but I'll try to make this platform better as soon as possible.<span class="quote">"</span></p>
+            </div>
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of basic-4 -->
+<!-- end of about -->
+ <!-- Contact -->
+ <div id="contact" class="form-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h3 style="text-align: center;margin-top: -35px;margin-bottom: 30px;" data-aos="zoom-in" data-aos-delay="300">Contact Information</h3>
+                <ul class="list-unstyled li-space-lg">
+                    <li class="address" data-aos="fade-up" data-aos-delay="300">Don't hesitate to give us a call or send us a contact form message</li>
+                    <li data-aos="fade-up" data-aos-delay="300"><i class="fas fa-map-marker-alt"></i>Tamwe Township, Yangon</li>
+                    <li data-aos="fade-up" data-aos-delay="300"><i class="fas fa-phone"></i><a class="turquoise" href="tel:003024630820" style="font-family: sans-serif;">+95 720 2212</a></li>
+                    <li data-aos="fade-up" data-aos-delay="300"><i class="fas fa-envelope"></i><a class="turquoise" href="mailto:csai.edu.mm@gmail.com" style="font-family: sans-serif;">hello@csai.edu.mm</a></li>
+                </ul>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="map-responsive" data-aos="zoom-in" data-aos-delay="300">                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3819.310146896934!2d96.17592031767077!3d16.810963101860256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1stamwe!5e0!3m2!1sen!2smm!4v1614340445687!5m2!1sen!2smm" allowfullscreen></iframe>
+                </div>
+            </div> <!-- end of col -->
+            <div class="col-lg-6">
+                
+                <!-- Contact Form -->
+                <form method="post"  id="contactForm" data-toggle="validator" data-focus="false" data-aos="fade-up" data-aos-delay="300">
+                    <div class="form-group">
+                        <input type="text" class="form-control-input" id="cname" required>
+                        <label class="label-control" for="cname">Name</label>
+                        <div class="help-block with-errors"></div>
                     </div>
-                </div> <!-- end of col -->
-                <div class="col-lg-6">
-                    
-                    <!-- Contact Form -->
-                    <form id="contactForm" data-toggle="validator" data-focus="false" data-aos="fade-up" data-aos-delay="300">
-                        <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" required>
-                            <label class="label-control" for="cname">Name</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control-input" id="cemail" required>
-                            <label class="label-control" for="cemail">Email</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
-                            <label class="label-control" for="cmessage">Your message</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group checkbox">
-                            <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>I have read and agree with CSAI edu's stated <a href="#">Privacy Policy</a> and <a href="#">Terms Conditions</a> 
-                            <div class="#"></div>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">SUBMIT MESSAGE</button>
-                        </div>
-                        <div class="form-message">
-                            <div id="cmsgSubmit" class="h3 text-center hidden"></div>
-                        </div>
-                    </form>
-                    <!-- end of contact form -->
+                    <div class="form-group">
+                        <input type="email" class="form-control-input" id="cemail" required>
+                        <label class="label-control" for="cemail">Email</label>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control-textarea" id="cmessage" required></textarea>
+                        <label class="label-control" for="cmessage">Your message</label>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>I have read and agree with CSAI edu's stated <a href="#">Privacy Policy</a> and <a href="#">Terms Conditions</a> 
+                        <div class="#"></div>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="form-control-submit-button">SUBMIT MESSAGE</button>
+                    </div>
+                    <div class="form-message">
+                        <div id="cmsgSubmit" class="h3 text-center hidden"></div>
+                    </div>
+                </form>
+                <!-- end of contact form -->
 
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of form-2 -->
-    <!-- end of contact -->
-
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of form-2 -->
+<!-- end of contact -->
 
 
 
@@ -529,6 +512,10 @@
                             <li class="media">
                                 <i class="fas fa-square"></i>
                                 <div class="media-body" data-aos="fade-up" data-aos-delay="300">Read our <a class="turquoise" href="#"><strong>Terms & Conditions</strong></a>, <a class="turquoise" href="#"><strong>Privacy Policy</strong></a></div>
+                            </li>
+                             <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body" data-aos="fade-up" data-aos-delay="300">Resources <a class="turquoise" href="images/erickyaw.png" download><strong>Download here</strong></a></div>
                             </li>
                         </ul>
                     </div>
@@ -572,7 +559,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="p-small"><strong>Copyright © 2021 <a href="https://inovatik.com">CSAI edu</a> - All rights reserved</strong></p>
+                    <p class="p-small"><strong>Copyright &copy; 2021 <a href="https://github.com/min276">CSAI edu</a> - All Rights Reserved</strong> | Developed by <strong><a href="https://min276.netlify.app">Min Khant Kyaw</a></strong></p>
+                    <!-- <p class="p-small"><strong>Copyright © 2021 <a href="https://inovatik.com">CSAI edu</a> - All rights reserved</strong></p> -->
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
@@ -591,6 +579,6 @@
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
     <script src="js/aos.js"></script>
     <script src="js/aosjs.js"></script>
-    
+    <script src="js/install.js"></script>
 </body>
 </html>
