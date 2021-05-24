@@ -52,4 +52,5 @@ closeButton.addEventListener('click', () => {
   prompt.style.display = 'none';  
 
   installEvent = null;
+  
 });
