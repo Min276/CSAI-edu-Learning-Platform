@@ -1,16 +1,16 @@
 $(document).ready(function(){
 
    $('#navbarDropdown').on('click', () => {
-      $('#dropdown').slideToggle();
+      $('#dropdown').toggle();
    });
 
    $('#navbarDropdown1').on('click', () => {
-   	 $('#dropdown1').slideToggle('slow');
+   	 $('#dropdown1').toggle();
        $('#dropdown2').fadeOut();
    });
 
    $('#navbarDropdown2').on('click', () => {
-   	 $('#dropdown2').slideToggle('slow');
+   	 $('#dropdown2').toggle();
        $('#dropdown1').fadeOut();
    });
    
